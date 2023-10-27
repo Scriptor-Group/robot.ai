@@ -24,6 +24,7 @@ Cette convention établit les règles et directives pour l'adoption et l'utilisa
 
 - **User-agent**: Identifie spécifiquement le robot auquel la règle s'applique.
 - **Crawl-cost**: Décrit le tarif associé au crawl d'une URL ou d'un ensemble d'URLs.
+- **Crawl-Licence**: Correspond a la licence associé au crawl du document
 - **Disallow**: Détermine les sections du site avec un coût spécifié.
 - **Allow**: Permet le crawl de sections spécifiques du site à un tarif défini.
 - **Payment-Platform**: URL de la plateforme centralisée pour les paiements.
