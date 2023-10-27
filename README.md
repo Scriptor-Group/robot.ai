@@ -43,7 +43,7 @@ Les règles définies pour des agents spécifiques l'emportent sur les règles d
 
 ## Paiement via la Plateforme Centralisée
 
-Les entreprises souhaitant être rémunérées pour le crawl de leur site adoptant cette convention doivent s'enregistrer sur la plateforme [crawl.txt.io](https://www.crawl.txt.io/). Après l'enregistrement, un token unique est délivré et doit être renseigné dans le `robot.txt` de leur site. 
+Les entreprises souhaitant être rémunérées pour le crawl de leur site adoptant cette convention doivent s'enregistrer sur la plateforme [permitbot.ai](https://www.permitbot.ai/). Après l'enregistrement, un token unique est délivré et doit être renseigné dans le `robot.txt` de leur site. 
 
 Les entreprises qui souhaitent crawler doivent effectuer les paiements associés aux coûts de crawl directement via cette plateforme centralisée, en se basant sur le token fourni dans le `robot.txt`.
 
@@ -54,7 +54,7 @@ Les entreprises qui souhaitent crawler doivent effectuer les paiements associés
 ```
 User-agent: *
 Crawl-cost: 0.01
-Payment-Platform: https://www.crawl.txt.io/
+Payment-Platform: https://www.permitbot.ai/
 Payment-Token: abc123xyz789
 ```
 
@@ -67,13 +67,13 @@ User-agent: Googlebot
 Crawl-cost: 0.005
 Allow: /public/
 Disallow: /private/
-Payment-Platform: https://www.crawl.txt.io/
+Payment-Platform: https://www.permitbot.ai/
 Payment-Token: def456ghi012
 
 User-agent: Bingbot
 Crawl-cost: 0.02
 Disallow: /sensitive-data/
-Payment-Platform: https://www.crawl.txt.io/
+Payment-Platform: https://www.permitbot.ai/
 Payment-Token: jkl789mno345
 ```
 
@@ -84,13 +84,13 @@ Ici, il y a des règles spécifiques pour `Googlebot` et `Bingbot`. `Googlebot` 
 ```
 User-agent: *
 Crawl-cost: 0.01
-Payment-Platform: https://www.crawl.txt.io/
+Payment-Platform: https://www.permitbot.ai/
 Payment-Token: pqr123stu456
 
 User-agent: MySpecificBot
 Crawl-cost: 0.015
 Allow: /exclusive-content/
-Payment-Platform: https://www.crawl.txt.io/
+Payment-Platform: https://www.permitbot.ai/
 Payment-Token: vwx789yza012
 ```
 
@@ -100,4 +100,4 @@ Dans cet exemple, il y a une tarification générale pour tous les robots et une
 
 1. **Sécurité**: Assurez-vous de bien protéger votre token et de ne le partager qu'avec des entités de confiance.
 2. **Respect de la convention**: Le non-respect des directives du `crawl-pricing.txt` peut entraîner des conséquences juridiques ou d'autres mesures.
-3. **Assistance**: Pour toute question ou assistance concernant la plateforme [crawl.txt.io](https://www.crawl.txt.io/), veuillez consulter la documentation officielle ou contacter le support.
+3. **Assistance**: Pour toute question ou assistance concernant la plateforme [permitbot.ai](https://www.permitbot.ai/), veuillez consulter la documentation officielle ou contacter le support.
